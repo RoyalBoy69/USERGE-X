@@ -77,7 +77,7 @@ async def send_inline_alive(message: Message) -> None:
         await message.err(str(ex), del_in=5)
         return
     await message.delete()
-    await asyncio.sleep(200)
+    await asyncio.sleep(350)
     await userge.delete_messages(message.chat.id, i_res_id)
 
 
